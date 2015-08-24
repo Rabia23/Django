@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+     <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        .container {
+            text-align: left;
+            font-size: large;
+        }
+
+        h2 {
+            color: deeppink;
+        }
+        h3{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+<p style="text-align: right"><a href="{% url 'User:user_logout' %}">Logout</a></p>
+<div class="container">
+    <h2>Authentication Application</h2></br></br>
+    <p>Welcome {{ user.username }} !!!</p>
+    <button onclick="location.href = '{% url 'User:edit_user_profile' %}';">Edit Profile</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+<p style="text-align: left"><a href="{% url 'User:index' %}">Home</a></p>
+<form method="post" action="{% url 'User:register' %}">
+{% csrf_token %}
+        <table border=" 0
+">
+{{ form.as_table }}
+</table>
+<input type="submit" value="Register"/>
+</form>
+</br>
+<a href="{% url 'User:user_login' %}">Login</a>
+</body>
+</html>

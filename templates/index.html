@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h2 {
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Authentication Application</h2></br></br>
+    <button onclick="location.href = '{% url 'User:index' %}';">User panel</button>
+    </br></br>
+    <button onclick="location.href = '/admin/';">Admin panel</button>
+
+</div>
+
+</body>
+</html>
